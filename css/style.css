@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* General styling */
+img {
+  align-self: center;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+nav {
+  background-color: transparent;
+}
+
+body {
+  position: relative;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul {
+  height: 64px;
+}
+
+a.navref:link {
+  color: black;
+  padding-right: 2px;
+  text-align: center;
+  display: inline-block;
+  font-size: 100%;
+  margin: 10px;
+}
+
+a.navref:visited {
+  color: #000000;
+  background-color: #000000;
+}
+
+a.navref:hover {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(192, 87, 12);
+
+  text-decoration: none;
+}
+
+/* index.html */
+#idx-body {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+#idx-h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 88px;
+  color: rgb(192, 87, 12);
+}
+
+.idx-h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  text-shadow: 1px 1px rgb(192, 87, 12);
+}
+
+.idx-img {
+  border-radius: 10px;
+}
+
+
+#aboutme {
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 5em;
+  word-wrap: normal;
+}
+
+/* resume.html */
+#res-body {
+  position: relative;
+  background-color: aliceblue;
+}
+
+#res-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: rgb(101, 46, 252);
+}
+
+#name-email,
+#education,
+#experience,
+#skills,
+#honors {
+  padding-left: 24px;
+}
+
+
+.company {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.res-section {
+  font-family: 'Roboto', sans-serif;
+  color: blue;
+
+}
+
+.duration {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #000000b4;
+}
+
+.res-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+#res-email {
+  color: rgb(101, 46, 252);
+}
+
+.job-title {
+  font-style: oblique;
+  font-weight: 500;
+
+}
+
+/* aboutme.html */
+#me-body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: rgb(174, 238, 229);
+  background: radial-gradient(circle, rgba(174, 238, 229, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+#me-heading {
+  padding-left: 24px;
+  font-family: 'Dancing Script',
+    cursive;
+  font-size: 64px;
+  color: rgb(124, 59, 230);
+  text-shadow: 1px 1px rgb(192, 87, 12);
+}
+
+.me-h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: rgb(238, 102, 102);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+#hobbies {
+  padding-right: 8px;
+  padding-left: 8px;
+
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+#likes-sec, #hob-sec {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+}
+
+#likes {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+#long-img {
+  border-radius: 6em;
+}
+
+#stonks {
+  border-radius: 6em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 55%;
+  box-shadow: 0 0 16px 16px rgb(255, 120, 47);
+}
+
+
+#hxh {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid rgb(59, 56, 250);
+}
+
+#boogie {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 55%;
+  position: sticky;
+}
+
+#boogie:hover {
+  box-shadow: 0 0 5px 6px rgb(216, 168, 34);
+}

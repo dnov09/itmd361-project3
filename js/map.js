@@ -26,7 +26,6 @@ function initMap() {
     var accraMarker = new google.maps.Marker({
         position: accraLoc,
         map,
-        // title: "Accra, The Capital",
         icon: 'https://maps.google.com/mapfiles/kml/pal4/icon47.png',
         animation: google.maps.Animation.BOUNCE
     });
@@ -46,15 +45,13 @@ function initMap() {
 
     google.maps.event.addListener(accraMarker, 'click', function () {
         map.setCenter(accraMarker.getPosition());
-        map.setZoom(12);
+        map.setZoom(14);
     });
 
     var akrpngMarker = new google.maps.Marker({
         position: akropongLoc,
         map,
-        title: "Presby Church at my Mother's hometown.",
         icon: 'https://maps.google.com/mapfiles/kml/pal2/icon11.png',
-        // animation: google.maps.Animation.DROP
     });
 
     var akrpngCont =
@@ -73,9 +70,7 @@ function initMap() {
     var parkMarker = new google.maps.Marker({
         position: parkLoc,
         map,
-        // title: "Mole National Park",
         icon: 'https://maps.google.com/mapfiles/kml/pal2/icon4.png',
-        // animation: google.maps.Animation.BOUNCE
     });
 
     var parkCont =

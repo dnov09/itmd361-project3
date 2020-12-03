@@ -3,12 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* map.html */
-#map-h1{
+#map-body {
+  text-align: center;
+  background-color: rgba(255, 242, 175, 0.48);
+}
+
+#map-h1 {
   font-family: 'Dancing Script',
-  cursive;
+    cursive;
   font-size: 64px;
-  color: rgb(195, 236, 178);
-  text-shadow: 1px 1px rgb(192, 87, 12);
+  color: rgb(187, 218, 164);
+  text-shadow: 1.5px 1.5px rgb(192, 87, 12);
 }
 
 /* General styling */
@@ -16,6 +21,12 @@
   height: 500px;
   width: 80%;
   display: inline-flex;
+
+  border-radius: 6em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 0 7px 7px rgb(192, 87, 12);
 }
 
 img {
@@ -193,7 +204,8 @@ a.navref:hover {
   border-radius: 4px;
 }
 
-#likes-sec, #hob-sec {
+#likes-sec,
+#hob-sec {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 16px;

@@ -4,8 +4,12 @@ function initMap() {
         center: ghanaLoc,
         zoom: 7,
         zoomControl: true,
-        gestureHandling: "greedy"
+        gestureHandling: "greedy",
+        scaleControl: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+
     }
+
     var map = new google.maps.Map(document.getElementById("map"), options);
 
     // locations
@@ -14,14 +18,27 @@ function initMap() {
     var parkLoc = new google.maps.LatLng(9.397312180630133, -1.7473248046233434);
     var mountLoc = new google.maps.LatLng(7.146181130651107, 0.35227486137596364);
 
-    // placing markers
+    // placing markers & content & functions
+    
     var accraMarker = new google.maps.Marker({
         position: accraLoc,
         map,
         title: "Accra, The Capital",
         icon: 'https://maps.google.com/mapfiles/kml/pal4/icon47.png',
         animation: google.maps.Animation.BOUNCE
+    });
 
+    var accraCont =
+        '<p>Kwame</p>';
+    var accraInfo = new google.maps.InfoWindow({
+        content: accraCont,
+    });
+
+    accraMarker.addListener('mouseover', function () {
+        accraInfo.open(map, this);
+    });
+    accraMarker.addListener('mouseout', function () {
+        accraInfo.close();
     });
 
     var akrpngMarker = new google.maps.Marker({
@@ -32,12 +49,38 @@ function initMap() {
         // animation: google.maps.Animation.DROP
     });
 
+    var akrpngCont =
+        '<p>Kwame</p>';
+    var akrpngInfo = new google.maps.InfoWindow({
+        content: akrpngCont,
+    });
+
+    akrpngMarker.addListener('mouseover', function () {
+        akrpngInfo.open(map, this);
+    });
+    akrpngMarker.addListener('mouseout', function () {
+        akrpngInfo.close();
+    });
+
     var parkMarker = new google.maps.Marker({
         position: parkLoc,
         map,
         title: "Mole National Park",
         icon: 'https://maps.google.com/mapfiles/kml/pal2/icon4.png',
         // animation: google.maps.Animation.BOUNCE
+    });
+
+    var parkCont =
+        '<p>Kwame</p>';
+    var parkInfo = new google.maps.InfoWindow({
+        content: parkCont,
+    });
+
+    parkMarker.addListener('mouseover', function () {
+        parkInfo.open(map, this);
+    });
+    parkMarker.addListener('mouseout', function () {
+        parkInfo.close();
     });
 
     var mountMarker = new google.maps.Marker({
@@ -48,5 +91,16 @@ function initMap() {
         // animation: google.maps.Animation.BOUNCE
     });
 
-    // on-click functions
+    var mountCont =
+        '<p>Kwame</p>';
+    var mountInfo = new google.maps.InfoWindow({
+        content: mountCont,
+    });
+
+    mountMarker.addListener('mouseover', function () {
+        mountInfo.open(map, this);
+    });
+    mountMarker.addListener('mouseout', function () {
+        mountInfo.close();
+    });
 }

@@ -9,8 +9,8 @@
 }
 
 #map-h1 {
-  font-family: 'Dancing Script',
-    cursive;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
   font-size: 64px;
   color: rgb(187, 218, 164);
   text-shadow: 1.5px 1.5px rgb(192, 87, 12);
@@ -18,8 +18,8 @@
 
 /* General styling */
 #map {
-  height: 500px;
-  width: 80%;
+  height: 30em;
+  width: 55%;
   display: inline-flex;
 
   border-radius: 6em;
@@ -181,7 +181,7 @@ a.navref:hover {
 }
 
 #me-heading {
-  padding-left: 24px;
+  text-align: center;
   font-family: 'Dancing Script',
     cursive;
   font-size: 64px;

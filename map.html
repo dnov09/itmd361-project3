@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <title>Ghana Map</title>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMLQR35u2lhMWxXjK-ZPlaelGvyoVN82o&callback=initMap"
+    type="text/javascript"></script>
+  <script async type="text/javascript" src="js/map.js"></script>
+
+  <title>Homeland Map</title>
 </head>
 
 <body>
@@ -26,6 +31,9 @@
       </li>
     </ul>
   </nav>
+
+  <h1 id="map-h1"><u>Map of the Homeland</u></h1>
+  <div id="map"></div>
 
 </body>
 

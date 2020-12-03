@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* General styling */
+#map {
+  height: 500px;
+  width: 80%;
+  display: inline-flex;
+}
+
 img {
   align-self: center;
   max-width: 100%;

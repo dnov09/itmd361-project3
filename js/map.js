@@ -106,4 +106,6 @@ function initMap() {
     mountMarker.addListener('mouseout', function () {
         mountInfo.close();
     });
+
+    google.maps.event.addDomListener(window, 'load', initMap);
 }

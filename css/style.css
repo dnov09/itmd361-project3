@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+/* map.html */
+#map-h1{
+  font-family: 'Dancing Script',
+  cursive;
+  font-size: 64px;
+  color: rgb(195, 236, 178);
+  text-shadow: 1px 1px rgb(192, 87, 12);
+}
+
 /* General styling */
 #map {
   height: 500px;

@@ -11,6 +11,9 @@ function initMap() {
     }
 
     var map = new google.maps.Map(document.getElementById("map"), options);
+    const trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
+
 
     // locations
     var accraLoc = new google.maps.LatLng(5.603033427043894, -0.18559112601790112);
@@ -19,17 +22,17 @@ function initMap() {
     var mountLoc = new google.maps.LatLng(7.146181130651107, 0.35227486137596364);
 
     // placing markers & content & functions
-    
+
     var accraMarker = new google.maps.Marker({
         position: accraLoc,
         map,
-        title: "Accra, The Capital",
+        // title: "Accra, The Capital",
         icon: 'https://maps.google.com/mapfiles/kml/pal4/icon47.png',
         animation: google.maps.Animation.BOUNCE
     });
 
     var accraCont =
-        '<p>Kwame</p>';
+        '<p>Accra, the capital</p>';
     var accraInfo = new google.maps.InfoWindow({
         content: accraCont,
     });
@@ -41,6 +44,11 @@ function initMap() {
         accraInfo.close();
     });
 
+    google.maps.event.addListener(accraMarker, 'click', function () {
+        map.setCenter(accraMarker.getPosition());
+        map.setZoom(12);
+    });
+
     var akrpngMarker = new google.maps.Marker({
         position: akropongLoc,
         map,
@@ -50,7 +58,7 @@ function initMap() {
     });
 
     var akrpngCont =
-        '<p>Kwame</p>';
+        '<p>Presbytarian Church in Akropong</p>';
     var akrpngInfo = new google.maps.InfoWindow({
         content: akrpngCont,
     });
@@ -65,13 +73,13 @@ function initMap() {
     var parkMarker = new google.maps.Marker({
         position: parkLoc,
         map,
-        title: "Mole National Park",
+        // title: "Mole National Park",
         icon: 'https://maps.google.com/mapfiles/kml/pal2/icon4.png',
         // animation: google.maps.Animation.BOUNCE
     });
 
     var parkCont =
-        '<p>Kwame</p>';
+        '<p>Mole National Park has a lot of elephants</p>';
     var parkInfo = new google.maps.InfoWindow({
         content: parkCont,
     });
@@ -86,13 +94,13 @@ function initMap() {
     var mountMarker = new google.maps.Marker({
         position: mountLoc,
         map,
-        title: "Mountain Afadjato",
+        // title: "Mountain Afadjato",
         icon: 'https://maps.google.com/mapfiles/kml/pal3/icon29.png',
         // animation: google.maps.Animation.BOUNCE
     });
 
     var mountCont =
-        '<p>Kwame</p>';
+        '<p>Mountain Afadjato is the highest mountain in Ghana.</p>';
     var mountInfo = new google.maps.InfoWindow({
         content: mountCont,
     });

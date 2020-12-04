@@ -18,7 +18,7 @@
 
 
 /* mobile friendly styling */
-/* map.html */
+/* nav + map.html */
 
 @media screen and (max-width: 590px) {
 
@@ -60,8 +60,6 @@
   }
 
 }
-
-
 
 /* General styling */
 #map {
